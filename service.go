@@ -153,7 +153,7 @@ func main() {
 }
 
 func setupDB() gorm.DB {
-	db, _ := gorm.Open("postgres", "user=housing password=housing dbname=housing_regions_production sslmode=disable host=10.1.6.123 port=5432")
+	db, _ := gorm.Open("postgres", "user=avinash password=test dbname=housing_regions sslmode=disable host=10.1.6.123 port=5432")
 
 	db.DB()
 
@@ -164,7 +164,7 @@ func setupDB() gorm.DB {
 }
 
 func setupRentDB() gorm.DB {
-	db, _ := gorm.Open("postgres", "user=housing password=housing dbname=housing_production sslmode=disable host=10.1.6.126 port=5432")
+	db, _ := gorm.Open("postgres", "user=avinash password=test dbname=housing sslmode=disable host=10.1.6.126 port=5432")
 
 	db.DB()
 
